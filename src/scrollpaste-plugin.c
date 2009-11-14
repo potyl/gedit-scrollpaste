@@ -259,3 +259,4 @@ scrollpaste_plugin_class_init (ScrollpastePluginClass *klass)
 
 	g_type_class_add_private (object_class, sizeof (ScrollpastePluginPrivate));
 }
+
