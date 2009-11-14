@@ -1,0 +1,9 @@
+[Gedit Plugin]
+Module=scrollpaste
+IAge=2
+_Name=Scroll Paste Fix
+_Description=Don't scroll to the cursor when text is pasted with the mouse.
+Icon=gedit-plugin
+Authors=Emmanuel Rodriguez <emmanuel.rodriguez@gmail.com>
+Copyright=Copyright © 2009 Emmanuel Rodriguez
+Website=http://github.com/potyl/gedit
