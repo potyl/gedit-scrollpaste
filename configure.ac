@@ -33,6 +33,14 @@ AC_PROG_MAKE_SET
 # make sure we keep ACLOCAL_FLAGS around for maintainer builds to work
 AC_SUBST(ACLOCAL_AMFLAGS, "$ACLOCAL_FLAGS -I m4")
 
+# ================================================================
+# Gettext stuff.
+# ================================================================
+
+GETTEXT_PACKAGE=gedit-smart-indenter
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
+AM_GLIB_GNU_GETTEXT
 
 # ================================================================
 # Start of pkg-config checks
@@ -78,6 +86,7 @@ AC_SUBST(GEDIT_PLUGINS_DATA_DIR)
 AC_CONFIG_FILES([
 Makefile
 src/Makefile
+po/Makefile.in
 ])
 
 AC_OUTPUT
