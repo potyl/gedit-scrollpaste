@@ -6,5 +6,5 @@ By default when text is pasted using the mouse in a text view the view scrolls
 to the current cursor position and not to where the text has been pasted. This
 is extremely annoying specially when pasting text in another screen page.
 
-Project homepage: http://github.com/potyl
+Project homepage: http://github.com/potyl/gedit-scrollpaste
 
