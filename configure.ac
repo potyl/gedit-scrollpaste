@@ -37,7 +37,7 @@ AC_SUBST(ACLOCAL_AMFLAGS, "$ACLOCAL_FLAGS -I m4")
 # Gettext stuff.
 # ================================================================
 
-GETTEXT_PACKAGE=gedit-smart-indenter
+GETTEXT_PACKAGE=gedit-scrollpaste
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
 AM_GLIB_GNU_GETTEXT
