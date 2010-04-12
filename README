@@ -31,4 +31,4 @@ Once the toolchain scripts are created simply build the program with:
 A faster way is to pass the arguments of ./configure directly to ./autogen.sh
 this way the command becomes:
 
-	./autogen.sh --prefix=/usr && make && sudo make install
+  ./autogen.sh --prefix=/usr && make && sudo make install
