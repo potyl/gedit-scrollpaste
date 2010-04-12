@@ -17,13 +17,18 @@ be trivial once the GNU autoconf toolchain is installed.
 In Debian based systems the build dependencies can be easily installed by
 doing:
 
-  sudo apt-get install build-essential autoconf libtool libgtksourceview2.0-dev gedit-dev
+  sudo apt-get install build-essential autoconf libtool gnome-common libgtksourceview2.0-dev gedit-dev
 
 If you have forked the code from github you will need to run the autoconf
 programs in order to prepare build toolchain:
 
-  autoreconf -vif
+  ./autogen.sh
 
 Once the toolchain scripts are created simply build the program with:
 
   ./configure --prefix=/usr && make && sudo make install
+
+A faster way is to pass the arguments of ./configure directly to ./autogen.sh
+this way the command becomes:
+
+	./autogen.sh --prefix=/usr && make && sudo make install
