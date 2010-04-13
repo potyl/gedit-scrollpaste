@@ -2,9 +2,10 @@ Gedit Scroll Paste Fix
 ===================================
 
 This plugin fixes GTK's scrolling behaviour when pasting text with the mouse.
-By default when text is pasted using the mouse in a text view the view scrolls
+By default when text is pasted in a text view using the mouse the view scrolls
 to the current cursor position and not to where the text has been pasted. This
-is extremely annoying specially when pasting text in another screen page.
+is extremely annoying specially when pasting text in another location that's far
+away from the cursor.
 
 Project homepage: http://github.com/potyl/gedit-scrollpaste
 
