@@ -18,11 +18,13 @@ be trivial once the GNU autoconf toolchain is installed.
 In Debian based systems the build dependencies can be easily installed by
 doing:
 
+  sudo apt-get install build-essential autoconf libtool gnome-common
+  sudo apt-get install libgtksourceview2.0-dev gedit-dev
+
 To install on Fedora, make sure you have a working toolchain installed and the the build dependencies:
 
   sudo yum install gcc make autoconf automake libtool gettext
   sudo yum install gtksourceview-devel gedit-devel
-  sudo apt-get install build-essential autoconf libtool gnome-common libgtksourceview2.0-dev gedit-dev
 
 If you have forked the code from github you will need to run the autoconf
 programs in order to prepare build toolchain:
