@@ -16,7 +16,7 @@ libscrollpaste.so: src/scrollpaste-plugin.c
 	gcc -arch i386 \
 	   -DHAVE_CONFIG_H -I. `pkg-config --cflags gedit-2.20` \
 	   -lgobject-2.0.0 -lglib-2.0.0 -lgtk-quartz-2.0.0 -L"${TARGET}/lib" \
-	   -Wl,-undefined -Wl,dynamic_lookup -bunlde \
+	   -Wl,-undefined -Wl,dynamic_lookup -bundle \
 	   -o $@ $<
 
 
