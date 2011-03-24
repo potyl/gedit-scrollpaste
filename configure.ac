@@ -5,7 +5,7 @@ GEDIT_PLUGINS_MAJOR=2.20.0
 
 AC_INIT(
 	gedit-scrollpaste,
-	0.0.2,
+	0.0.3,
 	[https://github.com/potyl/gedit-scrollpaste/issues],
 	[https://github.com/potyl/gedit-scrollpaste])
 

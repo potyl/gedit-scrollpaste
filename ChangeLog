@@ -1,3 +1,7 @@
+0.0.3 Thu Mar 24 22:43:48 CET 2011
+	- Allow the plugin to be compiled for the native version of gedit on OS X.
+
+
 0.0.2 Mon Apr 12 20:26:25 CEST 2010
 	- Include the required files for autoconf.
 
