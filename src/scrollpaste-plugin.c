@@ -186,7 +186,8 @@ paste_done_cb (GtkTextBuffer *buffer, GtkClipboard *clipboard, gpointer data)
 	 */
 	gtk_text_buffer_get_iter_at_mark (buffer, &iter, paste_data->paste_mark);
 	gtk_text_buffer_place_cursor (buffer, &iter);
-
+gtk_text_view_set_cursor_visible (paste_data->view, !gtk_text_view_get_cursor_visible (paste_data->view));
+//gtk_text_view_set_right_margin (paste_data->view, 10 + gtk_text_view_get_right_margin (paste_data->view));
 	gtk_text_view_scroll_to_mark (paste_data->view, paste_data->paste_mark,
 		0.0, FALSE, 0.0, 0.5);
 	gtk_text_buffer_delete_mark (buffer, paste_data->paste_mark);
