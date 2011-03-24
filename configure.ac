@@ -58,20 +58,37 @@ AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
 			      
 GNOME_COMPILE_WARNINGS(yes)
 
+
 # For building the plugin for the OS X native application (the one installed 
 # through a dmg image) we need to compile the plugin in 32 bit mode (i386) and
 # to install the plugin in /Applications/gedit.app/Contents/Resources
-AC_ARG_ENABLE(
-	osx,
-	AS_HELP_STRING(
-		[--enable-osx],
-		[build an OS X native plugin]
-	),
-	enable_osx=$enableval, enable_osx=yes
-)
+AC_MSG_CHECKING([for Mac OS X platform])
+case "$host" in
+	*-*-darwin*)
+		platform_osx=yes
+	;;
+	*)
+		platform_osx=no
+	;;
+esac
 
-if test x$enable_osx = xyes; then
-	CFLAGS="$CFLAGS -arch i386"
+if test "$platform_osx" = "yes"; then
+
+	AC_ARG_ENABLE(
+		osx,
+		AS_HELP_STRING(
+			[--enable-osx],
+			[build an OS X native plugin]
+		),
+		enable_osx=$enableval, enable_osx=yes
+	)
+
+	if test x$enable_osx = xyes; then
+		# For an native OS X plugin, we need to build for i386 and to install
+		# in /Applications/gedit.app/Contents/Resources
+		CFLAGS="$CFLAGS -arch i386"
+		prefix=/Applications/gedit.app/Contents/Resources
+	fi
 fi
 
 
