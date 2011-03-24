@@ -3,7 +3,11 @@ dnl Process this file with autoconf to produce a configure script.
 GEDIT_MAJOR=2.20.0
 GEDIT_PLUGINS_MAJOR=2.20.0
 
-AC_INIT(gedit-scrollpaste, 0.0.2, http://github.com/potyl)
+AC_INIT(
+	gedit-scrollpaste,
+	0.0.2,
+	[https://github.com/potyl/gedit-scrollpaste/issues],
+	[https://github.com/potyl/gedit-scrollpaste])
 
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_MACRO_DIR([m4])
