@@ -21,7 +21,8 @@ doing:
   sudo apt-get install build-essential autoconf libtool gnome-common
   sudo apt-get install libgtksourceview2.0-dev gedit-dev
 
-To install on Fedora, make sure you have a working toolchain installed and the the build dependencies:
+To install on Fedora, make sure you have a working toolchain installed and the
+build dependencies:
 
   sudo yum install gcc make autoconf automake libtool gettext
   sudo yum install gtksourceview-devel gedit-devel
